@@ -118,6 +118,8 @@ img {
 
 .section {
 
+  padding: 4.5rem 0 1rem;
+
   &__title, &__title-center {
     font-size: $h2-font-size;
     color: $title-color;
@@ -199,6 +201,10 @@ img {
     row-gap: 1.5rem;
   }
 
+  &__link {
+    text-transform: capitalize;
+  }
+
   &__link,
   &__logo,
   &__toggle {
@@ -230,5 +236,19 @@ img {
 
   &__description {
     margin-bottom: $mb-2;
+  }
+}
+
+
+/*=============== ABOUT ===============*/
+
+.about {
+
+  &__container {
+    gap: 2.5rem;
+  }
+
+  &__data {
+    text-align: center;
   }
 }

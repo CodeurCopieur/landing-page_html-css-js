@@ -53,11 +53,13 @@ img {
     display: none; }
 
 /*=============== CLASSES REUTILISSABLE ===============*/
-.section__title, .section__title-center {
-  font-size: 1.25rem;
-  color: #282725;
-  text-align: center;
-  margin-bottom: 1rem; }
+.section {
+  padding: 4.5rem 0 1rem; }
+  .section__title, .section__title-center {
+    font-size: 1.25rem;
+    color: #282725;
+    text-align: center;
+    margin-bottom: 1rem; }
 
 .svg__color {
   fill: #fdcb35; }
@@ -133,6 +135,8 @@ img {
     -ms-flex-align: center;
     align-items: center;
     row-gap: 1.5rem; }
+  .nav__link {
+    text-transform: capitalize; }
   .nav__link, .nav__logo, .nav__toggle {
     color: #282725;
     font-weight: 700; }
@@ -151,3 +155,10 @@ img {
 
 .home__description {
   margin-bottom: 2rem; }
+
+/*=============== ABOUT ===============*/
+.about__container {
+  gap: 2.5rem; }
+
+.about__data {
+  text-align: center; }
