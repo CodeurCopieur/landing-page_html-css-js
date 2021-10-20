@@ -17,12 +17,12 @@ body {
   margin: 3rem 0 0 0;
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
-  background-color: hsl(var(45), 0%, 100%);
-  color: hsl(var(45), 4%, 35%); }
+  background-color: white;
+  color: #5d5b56; }
 
 h1, h2, h3 {
   font-weight: 600;
-  color: hsl(var(45), 4%, 15%);
+  color: #282725;
   line-height: 1.5; }
 
 ul {
@@ -36,21 +36,34 @@ img {
   height: auto; }
 
 /*=============== BUTTON ===============*/
-.button__header {
-  display: none; }
+.button {
+  border: none;
+  display: inline-block;
+  background-color: #fdcb35;
+  color: #1A1A1A;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: 600;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s; }
+  .button:hover {
+    background-color: #fdc212; }
+  .button__header {
+    display: none; }
 
 /*=============== CLASSES REUTILISSABLE ===============*/
 .section__title, .section__title-center {
   font-size: 1.25rem;
-  color: hsl(var(45), 4%, 15%);
+  color: #282725;
   text-align: center;
   margin-bottom: 1rem; }
 
 .svg__color {
-  fill: hsl(var(45), var(98%), 60%); }
+  fill: #fdcb35; }
 
 .svg__blob {
-  fill: hsl(var(45), var(98%), 85%); }
+  fill: #feebb3; }
 
 .svg__img {
   width: 300px;
@@ -99,7 +112,7 @@ img {
       box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
       padding: 2.5rem 0;
       width: 90%;
-      top: 3rem;
+      top: -100%;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -108,3 +121,33 @@ img {
       transition: .4s;
       border-radius: 2rem;
       z-index: 100; } }
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    row-gap: 1.5rem; }
+  .nav__link, .nav__logo, .nav__toggle {
+    color: #282725;
+    font-weight: 700; }
+  .nav__toggle {
+    font-size: 1.3rem;
+    cursor: pointer; }
+
+/*=============== HOME ===============*/
+.home__container {
+  row-gap: 3rem; }
+
+.home__title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem; }
+
+.home__description {
+  margin-bottom: 2rem; }

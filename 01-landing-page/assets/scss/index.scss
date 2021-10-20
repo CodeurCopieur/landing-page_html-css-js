@@ -8,17 +8,17 @@ $header-height: 3rem;
 /*========== Colors ==========*/
 $hue: 45; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
 $sat: 98%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
-$first-color: hsl(var($hue), var($sat), 60%);
-$first-color-light: hsl(var($hue), var($sat), 85%);
-$first-color-lighten: hsl(var($hue), var($sat), 80%);
-$first-color-alt: hsl(var($hue), var($sat), 53%);
-$title-color: hsl(var($hue), 4%, 15%);
-$text-color: hsl(var($hue), 4%, 35%);
-$text-color-light: hsl(var($hue), 4%, 65%);
-$body-color: hsl(var($hue), 0%, 100%);
+$first-color: hsl($hue, $sat, 60%);
+$first-color-light: hsl($hue, $sat, 85%);
+$first-color-lighten: hsl($hue, $sat, 80%);
+$first-color-alt: hsl($hue, $sat, 53%);
+$title-color: hsl($hue, 4%, 15%);
+$text-color: hsl($hue, 4%, 35%);
+$text-color-light: hsl($hue, 4%, 65%);
+$body-color: hsl($hue, 0%, 100%);
 $container-color: #FFF;
-$scroll-bar-color: hsl(var($hue), 4%, 85%);
-$scroll-thumb-color: hsl(var($hue), 4%, 75%);
+$scroll-bar-color: hsl($hue, 4%, 85%);
+$scroll-thumb-color: hsl($hue, 4%, 75%);
 
 
 /*========== Font and typography ==========*/
@@ -94,7 +94,20 @@ img {
 }
 
 /*=============== BUTTON ===============*/
+
 .button {
+  border: none;
+  display: inline-block;
+  background-color: $first-color;
+  color: #1A1A1A;
+  padding: .75rem 1.5rem;
+  border-radius: 3rem;
+  font-weight: $font-semi-bold;
+  transition: .3s;
+
+  &:hover {
+    background-color: $first-color-alt;
+  }
 
   &__header {
     display: none;
@@ -169,7 +182,7 @@ img {
       box-shadow: 0 0 4px rgba(0, 0, 0, .1);
       padding: 2.5rem 0;
       width: 90%;
-      top: 3rem;
+      top:-100%;
       left: 0;
       right: 0;
       margin: 0 auto;
@@ -177,5 +190,45 @@ img {
       border-radius: 2rem;
       z-index: $z-fixed;
     }
+  }
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  &__link,
+  &__logo,
+  &__toggle {
+    color: $title-color;
+    font-weight: $font-bold;
+  }
+
+  &__toggle {
+    font-size: 1.3rem;
+    cursor: pointer;
+  }
+}
+
+
+/*=============== HOME ===============*/
+
+.home {
+
+  &__container {
+    row-gap: 3rem;
+  }
+
+  &__title {
+    
+    font-size: $biggest-font-size;
+    font-weight: $font-bold;
+    margin-bottom: $mb-0-75;
+  }
+
+  &__description {
+    margin-bottom: $mb-2;
   }
 }
