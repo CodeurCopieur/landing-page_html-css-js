@@ -3,7 +3,7 @@
 Sites Web responsive :
 
   + en utilisant HTML, Sass et JavaScript.
-  + Développé d'abord avec la méthodologie Mobile First, puis pour le bureau.
+  + Développé d'abord avec la méthodologie Mobile First, puis pour le Desktop.
   + Compatible avec tous les appareils mobiles et avec une interface utilisateur belle et agréable.
 
      
