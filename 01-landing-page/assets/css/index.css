@@ -1,0 +1,110 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap");
+/*=============== VARIABLES CSS ===============*/
+/*========== Colors ==========*/
+/*========== Font and typography ==========*/
+/*========== Font weight ==========*/
+/*========== Margenes ==========*/
+/*========== z index ==========*/
+/*=============== BASE ===============*/
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+body {
+  margin: 3rem 0 0 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.938rem;
+  background-color: hsl(var(45), 0%, 100%);
+  color: hsl(var(45), 4%, 35%); }
+
+h1, h2, h3 {
+  font-weight: 600;
+  color: hsl(var(45), 4%, 15%);
+  line-height: 1.5; }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+/*=============== BUTTON ===============*/
+.button__header {
+  display: none; }
+
+/*=============== CLASSES REUTILISSABLE ===============*/
+.section__title, .section__title-center {
+  font-size: 1.25rem;
+  color: hsl(var(45), 4%, 15%);
+  text-align: center;
+  margin-bottom: 1rem; }
+
+.svg__color {
+  fill: hsl(var(45), var(98%), 60%); }
+
+.svg__blob {
+  fill: hsl(var(45), var(98%), 85%); }
+
+.svg__img {
+  width: 300px;
+  -ms-grid-column-align: center;
+  justify-self: center; }
+
+/*=============== LAYOUT ===============*/
+.container {
+  max-width: 968px;
+  margin-left: 1.5rem;
+  margin-right: 1.5rem; }
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  gap: 1.5rem; }
+
+/*=============== HEADER ===============*/
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
+
+/*=============== NAV ===============*/
+.nav {
+  height: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+  @media screen and (max-width: 767px) {
+    .nav__menu {
+      position: fixed;
+      background-color: #FFF;
+      -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 0 4px rgba(0, 0, 0, 0.1);
+      padding: 2.5rem 0;
+      width: 90%;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      -webkit-transition: .4s;
+      -o-transition: .4s;
+      transition: .4s;
+      border-radius: 2rem;
+      z-index: 100; } }

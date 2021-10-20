@@ -1,0 +1,56 @@
+doctype html
+html(lang="fr")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    title Landing Page Delivry
+
+    // BOX ICONS 
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css")
+
+    // CSS
+    link(rel="stylesheet", href="./assets/css/index.css")
+
+  body 
+
+    // HEADER 
+
+    header.header#header
+      nav.nav.container
+        a.nav__logo(href="#") Logo
+
+        .nav__menu#nav-menu
+          ul.nav__list
+            each val, i in ['accueil', 'histoire','services', 'contact']
+              li.nav__item
+                a.nav__link(href='#'+val)=val
+        
+        .nav__toggle#nav-toggle
+          i.bx.bx-grid-alt
+        
+        button(type="button").button.button__header Commandez
+
+    main
+
+    // HOME 
+
+    // ABOUT 
+
+    // SECURITY 
+
+    // SERVICES 
+
+    // APP 
+
+    // CONTACT US
+
+
+    // FOOTER 
+    footer 
+
+    // SCROLL UP
+
+    // MAIN JS 
+
+    script(src="./assets/js/index.js") 

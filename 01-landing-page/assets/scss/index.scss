@@ -1,0 +1,181 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+
+$header-height: 3rem;
+
+/*========== Colors ==========*/
+$hue: 45; //  Yellow: 45   | Red: 4 | Orange: 18  | Green: 118
+$sat: 98%; // Yellow: 98% | Red: 90% | Orange: 85% | Green: 50%
+$first-color: hsl(var($hue), var($sat), 60%);
+$first-color-light: hsl(var($hue), var($sat), 85%);
+$first-color-lighten: hsl(var($hue), var($sat), 80%);
+$first-color-alt: hsl(var($hue), var($sat), 53%);
+$title-color: hsl(var($hue), 4%, 15%);
+$text-color: hsl(var($hue), 4%, 35%);
+$text-color-light: hsl(var($hue), 4%, 65%);
+$body-color: hsl(var($hue), 0%, 100%);
+$container-color: #FFF;
+$scroll-bar-color: hsl(var($hue), 4%, 85%);
+$scroll-thumb-color: hsl(var($hue), 4%, 75%);
+
+
+/*========== Font and typography ==========*/
+$body-font: 'Poppins', sans-serif;
+
+$biggest-font-size: 2rem;
+$h2-font-size: 1.25rem;
+$h3-font-size: 1.125rem;
+$normal-font-size: .938rem;
+$small-font-size: .813rem;
+$smaller-font-size: .75rem;
+
+// Responsive typography
+@media screen and (min-width: 968px){
+    $biggest-font-size: 3rem;
+    $h2-font-size: 1.75rem;
+    $h3-font-size: 1.25rem;
+    $normal-font-size: 1rem;
+    $small-font-size: .875rem;
+    $smaller-font-size: .813rem;
+}
+
+/*========== Font weight ==========*/
+$font-semi-bold: 600;
+$font-bold: 700;
+
+/*========== Margenes ==========*/
+$mb-0-5: .5rem;
+$mb-0-75: .75rem;
+$mb-1: 1rem;
+$mb-1-5: 1.5rem;
+$mb-2: 2rem;
+
+/*========== z index ==========*/
+$z-tooltip: 10;
+$z-fixed: 100;
+
+
+/*=============== BASE ===============*/
+
+*, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: $header-height 0 0 0;
+  font-family: $body-font;
+  font-size: $normal-font-size;
+  background-color: $body-color;
+  color: $text-color;
+  // transition: .5s; for animation dark mode
+}
+
+h1, h2, h3 {
+  font-weight: $font-semi-bold;
+  color: $title-color;
+  line-height: 1.5;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/*=============== BUTTON ===============*/
+.button {
+
+  &__header {
+    display: none;
+  }
+}
+
+/*=============== CLASSES REUTILISSABLE ===============*/
+
+.section {
+
+  &__title, &__title-center {
+    font-size: $h2-font-size;
+    color: $title-color;
+    text-align: center;
+    margin-bottom: $mb-1;
+  }
+}
+
+.svg {
+
+  &__color {
+    fill: $first-color;
+  }
+
+  &__blob {
+    fill: $first-color-light;
+  }
+
+  &__img {
+    width: 300px;
+    justify-self: center;
+  }
+}
+
+/*=============== LAYOUT ===============*/
+
+.container {
+  max-width: 968px;
+  margin-left: $mb-1-5;
+  margin-right: $mb-1-5;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+/*=============== HEADER ===============*/
+
+.header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-fixed;
+  transition: .5s; // for animation dark mode
+}
+
+/*=============== NAV ===============*/
+
+.nav {
+  height: $header-height;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  
+  &__menu {
+
+    @media screen and (max-width: 767px){
+      position: fixed;
+      background-color: $container-color;
+      box-shadow: 0 0 4px rgba(0, 0, 0, .1);
+      padding: 2.5rem 0;
+      width: 90%;
+      top: 3rem;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+      transition: .4s;
+      border-radius: 2rem;
+      z-index: $z-fixed;
+    }
+  }
+}
