@@ -97,6 +97,7 @@ img {
 
 .button {
   border: none;
+  cursor: pointer;
   display: inline-block;
   background-color: $first-color;
   color: #1A1A1A;
@@ -111,6 +112,27 @@ img {
 
   &__header {
     display: none;
+  }
+
+  &-link {
+    background: none;
+    padding: 0;
+    color: $title-color;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
+  &-flex {
+    display: inline-flex;
+    align-items: center;
+    column-gap: .25rem;
+    padding: .75rem 1rem;
+  }
+
+  &__icon {
+    font-size: 1.5rem;
   }
 }
 
@@ -250,5 +272,95 @@ img {
 
   &__data {
     text-align: center;
+  }
+}
+
+/*=============== SECURITY ===============*/
+
+.security{
+
+  &__container{
+    gap: 2.5rem;
+  }
+
+  &__description {
+    text-align: center;
+  }
+}
+
+/*=============== SERVICES ===============*/
+
+.services {
+
+  &__container{
+    padding-top: 1rem;
+  }
+
+  &__data {
+    display: grid;
+    row-gap: 1rem;
+    background-color: var($container-color);
+    box-shadow: 0 2px 6px hsla($hue, 100%, 15%, .15);
+    padding: 2rem 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  &__img {
+    width: 135px;
+    justify-self: center;
+    margin-bottom: $mb-0-5;
+  }
+
+}
+
+/*=============== APP ===============*/
+
+.app {
+
+  &__container {
+    gap: 2.5rem;
+  }
+
+  &__data {
+    text-align: center;
+  }
+
+  &__description{
+    margin-bottom: $mb-1-5;
+  }
+
+  &__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, max-content);
+    justify-content: center;
+    gap: .5rem;
+  }
+}
+
+/*=============== CONTACT ===============*/
+
+.contact {
+
+  &__container {
+    padding-bottom: 3rem;
+  }
+
+  &__description {
+    text-align: center;
+  }
+
+  &__content {
+    row-gap: .75rem;
+  }
+
+  &__address {
+    font-size: $small-font-size;
+    font-weight: $font-semi-bold;
+  }
+
+  &__information {
+    font-weight: initial;
+    color: $text-color;
   }
 }

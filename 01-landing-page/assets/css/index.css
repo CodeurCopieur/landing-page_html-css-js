@@ -38,6 +38,7 @@ img {
 /*=============== BUTTON ===============*/
 .button {
   border: none;
+  cursor: pointer;
   display: inline-block;
   background-color: #fdcb35;
   color: #1A1A1A;
@@ -51,6 +52,24 @@ img {
     background-color: #fdc212; }
   .button__header {
     display: none; }
+  .button-link {
+    background: none;
+    padding: 0;
+    color: #282725; }
+    .button-link:hover {
+      background-color: transparent; }
+  .button-flex {
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-column-gap: .25rem;
+    column-gap: .25rem;
+    padding: .75rem 1rem; }
+  .button__icon {
+    font-size: 1.5rem; }
 
 /*=============== CLASSES REUTILISSABLE ===============*/
 .section {
@@ -162,3 +181,71 @@ img {
 
 .about__data {
   text-align: center; }
+
+/*=============== SECURITY ===============*/
+.security__container {
+  gap: 2.5rem; }
+
+.security__description {
+  text-align: center; }
+
+/*=============== SERVICES ===============*/
+.services__container {
+  padding-top: 1rem; }
+
+.services__data {
+  display: -ms-grid;
+  display: grid;
+  row-gap: 1rem;
+  background-color: var(#FFF);
+  -webkit-box-shadow: 0 2px 6px rgba(77, 57, 0, 0.15);
+  box-shadow: 0 2px 6px rgba(77, 57, 0, 0.15);
+  padding: 2rem 1.5rem;
+  border-radius: 1rem;
+  text-align: center; }
+
+.services__img {
+  width: 135px;
+  -ms-grid-column-align: center;
+  justify-self: center;
+  margin-bottom: 0.5rem; }
+
+/*=============== APP ===============*/
+.app__container {
+  gap: 2.5rem; }
+
+.app__data {
+  text-align: center; }
+
+.app__description {
+  margin-bottom: 1.5rem; }
+
+.app__buttons {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (-webkit-max-content)[2];
+  -ms-grid-columns: (max-content)[2];
+  grid-template-columns: repeat(2, -webkit-max-content);
+  grid-template-columns: repeat(2, max-content);
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  gap: .5rem; }
+
+/*=============== CONTACT ===============*/
+.contact__container {
+  padding-bottom: 3rem; }
+
+.contact__description {
+  text-align: center; }
+
+.contact__content {
+  row-gap: .75rem; }
+
+.contact__address {
+  font-size: 0.813rem;
+  font-weight: 600; }
+
+.contact__information {
+  font-weight: initial;
+  color: #5d5b56; }
