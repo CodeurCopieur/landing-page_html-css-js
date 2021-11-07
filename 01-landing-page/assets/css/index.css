@@ -249,3 +249,39 @@ img {
 .contact__information {
   font-weight: initial;
   color: #5d5b56; }
+
+/*=============== FOOTER ===============*/
+.footer {
+  background-color: #fee59a;
+  padding-bottom: 2rem; }
+  .footer__container {
+    row-gap: 2rem; }
+  .footer__logo, .footer__title {
+    font-size: 1.125rem;
+    margin-bottom: 0.75rem; }
+  .footer__logo {
+    display: inline-block;
+    font-weight: 600;
+    color: #282725; }
+  .footer__description, .footer__link {
+    font-size: 0.813rem; }
+  .footer__links {
+    display: -ms-grid;
+    display: grid;
+    row-gap: .5rem; }
+  .footer__link {
+    color: #282725; }
+  .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-column-gap: 1.5rem;
+    column-gap: 1.5rem; }
+    .footer__social-link {
+      font-size: 1.25rem;
+      color: #282725; }
+  .footer__copy {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: 0.813rem;
+    color: #5d5b56; }

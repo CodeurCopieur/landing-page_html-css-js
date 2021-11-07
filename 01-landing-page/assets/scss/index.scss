@@ -364,3 +364,58 @@ img {
     color: $text-color;
   }
 }
+
+
+/*=============== FOOTER ===============*/
+
+.footer {
+  background-color: $first-color-lighten;
+  padding-bottom: 2rem;
+
+  &__container {
+    row-gap: 2rem;
+  }
+
+  &__logo,
+  &__title {
+    font-size: $h3-font-size;
+    margin-bottom: $mb-0-75;
+  }
+
+  &__logo {
+    display: inline-block;
+    font-weight: $font-semi-bold;
+    color: $title-color;
+  }
+
+  &__description,
+  &__link {
+    font-size: $small-font-size;
+  }
+
+  &__links {
+    display: grid;
+    row-gap: .5rem;
+  }
+
+  &__link {
+    color: $title-color;
+  }
+
+  &__social {
+    display: flex;
+    column-gap: 1.5rem;
+
+    &-link {
+      font-size: 1.25rem;
+      color: $title-color;
+    }
+  }
+
+  &__copy {
+    margin-top: 6rem;
+    text-align: center;
+    font-size: $small-font-size;
+    color: $text-color;
+  }
+}
