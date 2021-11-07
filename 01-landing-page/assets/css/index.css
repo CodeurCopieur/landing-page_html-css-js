@@ -105,6 +105,7 @@ img {
 /*=============== HEADER ===============*/
 .header {
   width: 100%;
+  background-color: white;
   position: fixed;
   top: 0;
   left: 0;
