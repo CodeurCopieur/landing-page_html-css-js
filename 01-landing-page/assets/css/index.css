@@ -308,3 +308,26 @@ img {
     text-align: center;
     font-size: 0.813rem;
     color: #5d5b56; }
+
+/*=============== SCROLL UP ===============*/
+.scrollup {
+  position: fixed;
+  background-color: #fdcb35;
+  right: 1rem;
+  bottom: 5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: .3rem;
+  border-radius: .25rem;
+  z-index: 10;
+  opacity: .8;
+  -webkit-transform: .4;
+  -ms-transform: .4;
+  transform: .4; }
+  .scrollup:hover {
+    background-color: #fdcb35;
+    opacity: 1; }
+  .scrollup__icon {
+    font-size: 1.25rem;
+    color: #282725; }
