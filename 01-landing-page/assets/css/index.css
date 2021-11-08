@@ -321,13 +321,25 @@ img {
   padding: .3rem;
   border-radius: .25rem;
   z-index: 10;
-  opacity: .8;
+  opacity: 0;
+  visibility: hidden;
   -webkit-transform: .4;
   -ms-transform: .4;
   transform: .4; }
   .scrollup:hover {
     background-color: #fdcb35;
-    opacity: 1; }
+    opacity: 1 !important; }
   .scrollup__icon {
     font-size: 1.25rem;
     color: #282725; }
+
+/*=============== SCROLL BAR ===============*/
+::-webkit-scrollbar {
+  width: 0.6rem;
+  border-radius: .5rem;
+  background-color: #dadad7; }
+  ::-webkit-scrollbar-thumb {
+    background-color: #c2c1bd;
+    border-radius: .5rem; }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #a9a8a2; }

@@ -58,7 +58,7 @@ gsap.utils.toArray('.item').forEach( (item, i) => {
     },
     //markers: true
   })
-})
+});
 
 /*=============== CHANGE BACKGROUND ITEM ===============*/
 
@@ -70,9 +70,20 @@ ScrollTrigger.create({
     targets: '#header',
     className: 'scroll-header'
   },
+  //markers: true
+});
+
+
+/*=============== SHOW SCROLL TOP ===============*/
+
+gsap.to('#scrollup', {
+  scrollTrigger: {
+    trigger: '.app',
+    scrub: 1,
+  },
+  autoAlpha: .8,
   markers: true
 })
-
 
 function init() {
   initScrollTo();
