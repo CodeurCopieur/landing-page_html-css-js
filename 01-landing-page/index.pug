@@ -24,7 +24,8 @@ html(lang="fr")
           ul.nav__list
             each val, index in ['home', 'about','services', 'contact']
               li.nav__item
-                  a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val
+                  //a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val
+                  a.nav__link(href='#'+val)=val
         
         .nav__toggle#nav-toggle
           i.bx.bx-grid-alt
@@ -35,7 +36,7 @@ html(lang="fr")
 
       // HOME
 
-      section.home.section#home
+      section.home.section.item#home
         .home__container.container.grid
           svg(class="svg__img svg__color home__img" viewbox='0 0 554 325' xmlns='http://www.w3.org/2000/svg')
             g(clip-path='url(#clip0)')
@@ -521,7 +522,7 @@ html(lang="fr")
 
       // ABOUT 
 
-      section.about.section.container#about
+      section.about.section.container.item#about
         .about__container.grid
           .about__data
             h2.section__title-center 
@@ -880,7 +881,7 @@ html(lang="fr")
 
       // SERVICES 
 
-      section.services.section.container#services
+      section.services.section.container.item#services
         h2.section__title Lorem, ipsum dolor<br> lorem
         .services__container.grid
           .services__data
@@ -1904,7 +1905,7 @@ html(lang="fr")
 
       // CONTACT US
 
-      section.contact.section.container#contact
+      section.contact.section.container.item#contact
         .contact__container.grid
           .contact__content
             h2.section__title-center Lorem ipsum dolor <br> consectetur
@@ -1974,6 +1975,7 @@ html(lang="fr")
     // GSAP
     
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js")
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js")
 
     // MAIN JS 
