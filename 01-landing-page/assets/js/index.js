@@ -29,11 +29,38 @@ function initScrollTo() {
 
     link.addEventListener('click', (e)=> {
       e.preventDefault();
+      
+      gsap.to(window, {duration: 1.5, scrollTo: target, ease:'Power2.out'}, "-=.25")
       t1.reverse();
-      gsap.to(window, {duration: 1.5, scrollTo: target, ease:'Power2.out'})
     })
   });
 }
+
+/*=============== ACTIVE ITEM ===============*/
+
+const getVh = () => {
+  const vh = Math.max(document.documentElement.clientHeight || 0, window.clientHeight || 0);
+
+  return vh;
+}
+
+gsap.utils.toArray('.item').forEach( (item, i) => {
+
+  const navLinks = gsap.utils.toArray('.nav__item a');
+
+  ScrollTrigger.create({
+    trigger: item,
+    start: 'top center',
+    end: ()=> `+=${item.offsetHeight}`,
+    toggleClass: {
+        targets: navLinks[i],
+        className: 'active-link'
+    },
+    markers: true
+  })
+})
+
+
 
 function init() {
   initScrollTo();
