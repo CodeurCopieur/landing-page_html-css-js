@@ -343,3 +343,14 @@ img {
     border-radius: .5rem; }
     ::-webkit-scrollbar-thumb:hover {
       background-color: #a9a8a2; }
+
+/*=============== Theme  ===============*/
+/*=============== Variable Theme Dark  ===============*/
+/*=============== Button Dark/Light ===============*/
+.change-theme {
+  position: absolute;
+  right: 1.5rem;
+  top: 2.2rem;
+  color: #282725;
+  font-size: 1.8rem;
+  cursor: pointer; }
