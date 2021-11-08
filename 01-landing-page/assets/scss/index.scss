@@ -191,6 +191,23 @@ img {
   transition: .5s; // for animation dark mode
 }
 
+/*=== Active link ===*/
+.active-link {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: $title-color;
+    border-radius: 50%;
+  }
+}
+
+
 /*=============== NAV ===============*/
 
 .nav {

@@ -114,6 +114,19 @@ img {
   -o-transition: .5s;
   transition: .5s; }
 
+/*=== Active link ===*/
+.active-link {
+  position: relative; }
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: #282725;
+    border-radius: 50%; }
+
 /*=============== NAV ===============*/
 .nav {
   height: 3rem;
