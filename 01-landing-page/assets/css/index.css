@@ -114,23 +114,11 @@ img {
   -o-transition: .5s;
   transition: .5s; }
 
-/*=============== Active link ===============*/
-.active-link {
-  position: relative; }
-  .active-link::before {
-    content: '';
-    position: absolute;
-    bottom: -.75rem;
-    left: 45%;
-    width: 5px;
-    height: 5px;
-    background-color: #282725;
-    border-radius: 50%;
-    -webkit-transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1);
-    -o-transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1);
-    transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1); }
-
 /*=============== Change background header ===============*/
+.scroll-header {
+  -webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1); }
+
 /*=============== NAV ===============*/
 .nav {
   height: 3rem;
@@ -173,13 +161,30 @@ img {
     align-items: center;
     row-gap: 1.5rem; }
   .nav__link {
-    text-transform: capitalize; }
+    text-transform: capitalize;
+    position: relative; }
   .nav__link, .nav__logo, .nav__toggle {
     color: #282725;
     font-weight: 700; }
   .nav__toggle {
     font-size: 1.3rem;
     cursor: pointer; }
+
+/*=============== Active link ===============*/
+.active-link {
+  position: relative; }
+  .active-link::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: #282725;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1);
+    -o-transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1);
+    transition: all 0.3s cubic-bezier(0.5, 0.7, 0.4, 1); }
 
 /*=============== HOME ===============*/
 .home__container {

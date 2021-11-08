@@ -191,25 +191,10 @@ img {
   transition: .5s; // for animation dark mode
 }
 
-/*=============== Active link ===============*/
-.active-link {
-  position: relative;
-
-  &::before {
-    content: '';
-    position: absolute;
-    bottom: -.75rem;
-    left: 45%;
-    width: 5px;
-    height: 5px;
-    background-color: $title-color;
-    border-radius: 50%;
-    transition: all .3s cubic-bezier(.5, .7, .4, 1);
-  }
-}
-
 /*=============== Change background header ===============*/
-
+.scroll-header {
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .1);
+}
 
 /*=============== NAV ===============*/
 
@@ -246,6 +231,7 @@ img {
 
   &__link {
     text-transform: capitalize;
+    position: relative;
   }
 
   &__link,
@@ -258,6 +244,23 @@ img {
   &__toggle {
     font-size: 1.3rem;
     cursor: pointer;
+  }
+}
+
+/*=============== Active link ===============*/
+.active-link {
+  position: relative;
+
+  &::before {
+    content: '';
+    position: absolute;
+    bottom: -.75rem;
+    left: 45%;
+    width: 5px;
+    height: 5px;
+    background-color: $title-color;
+    border-radius: 50%;
+    transition: all .3s cubic-bezier(.5, .7, .4, 1);
   }
 }
 
