@@ -16,10 +16,18 @@
       <nav class="nav container"><a class="nav__logo" href="#home">Logo</a>
         <div class="nav__menu" id="nav-menu">
           <ul class="nav__list">
-            <li class="nav__item"><a class="nav__link active-link" href="#home">home</a></li>
-            <li class="nav__item"><a class="nav__link" href="#about">about</a></li>
-            <li class="nav__item"><a class="nav__link" href="#services">services</a></li>
-            <li class="nav__item"><a class="nav__link" href="#contact">contact</a></li>
+            <li class="nav__item">
+              <!--a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val--><a class="nav__link" href="#home">home</a>
+            </li>
+            <li class="nav__item">
+              <!--a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val--><a class="nav__link" href="#about">about</a>
+            </li>
+            <li class="nav__item">
+              <!--a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val--><a class="nav__link" href="#services">services</a>
+            </li>
+            <li class="nav__item">
+              <!--a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val--><a class="nav__link" href="#contact">contact</a>
+            </li>
           </ul>
         </div>
         <div class="nav__toggle" id="nav-toggle"><i class="bx bx-grid-alt"></i></div>
@@ -28,7 +36,7 @@
     </header>
     <main>
       <!-- HOME-->
-      <section class="home section" id="home">
+      <section class="home section item" id="home">
         <div class="home__container container grid">
           <svg class="svg__img svg__color home__img" viewbox="0 0 554 325" xmlns="http://www.w3.org/2000/svg">
             <g clip-path="url(#clip0)">
@@ -350,7 +358,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section class="about section container" id="about">
+      <section class="about section container item" id="about">
         <div class="about__container grid">
           <div class="about__data">
             <h2 class="section__title-center">
@@ -721,7 +729,7 @@
         </div>
       </section>
       <!-- SERVICES -->
-      <section class="services section container" id="services">
+      <section class="services section container item" id="services">
         <h2 class="section__title">Lorem, ipsum dolor<br> lorem</h2>
         <div class="services__container grid">
           <div class="services__data">
@@ -1721,7 +1729,7 @@
         </div>
       </section>
       <!-- CONTACT US-->
-      <section class="contact section container" id="contact">
+      <section class="contact section container item" id="contact">
         <div class="contact__container grid">
           <div class="contact__content">
             <h2 class="section__title-center">Lorem ipsum dolor <br> consectetur</h2>
@@ -1774,6 +1782,7 @@
     <!-- SCROLL UP-->
     <!-- GSAP-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js"></script>
     <!-- MAIN JS -->
     <script src="./assets/js/index.js"></script>
