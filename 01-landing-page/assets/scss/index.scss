@@ -191,7 +191,7 @@ img {
   transition: .5s; // for animation dark mode
 }
 
-/*=== Active link ===*/
+/*=============== Active link ===============*/
 .active-link {
   position: relative;
 
@@ -204,8 +204,11 @@ img {
     height: 5px;
     background-color: $title-color;
     border-radius: 50%;
+    transition: all .3s cubic-bezier(.5, .7, .4, 1);
   }
 }
+
+/*=============== Change background header ===============*/
 
 
 /*=============== NAV ===============*/
