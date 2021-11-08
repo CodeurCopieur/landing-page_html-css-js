@@ -56,10 +56,22 @@ gsap.utils.toArray('.item').forEach( (item, i) => {
         targets: navLinks[i],
         className: 'active-link'
     },
-    markers: true
+    //markers: true
   })
 })
 
+/*=============== CHANGE BACKGROUND ITEM ===============*/
+
+ScrollTrigger.create({
+  trigger: '#home',
+  start:'top+=80top',
+  endTrigger: '.footer',
+  toggleClass: {
+    targets: '#header',
+    className: 'scroll-header'
+  },
+  markers: true
+})
 
 
 function init() {
