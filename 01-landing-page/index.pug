@@ -18,13 +18,13 @@ html(lang="fr")
 
     header.header#header
       nav.nav.container
-        a.nav__logo(href="#") Logo
+        a.nav__logo(href="#home") Logo
 
         .nav__menu#nav-menu
           ul.nav__list
-            each val, i in ['home', 'about','services', 'contact']
+            each val, index in ['home', 'about','services', 'contact']
               li.nav__item
-                a.nav__link(href='#'+val)=val
+                  a.nav__link(href='#'+val "class"=( index == 0 ? "active-link" : ""))=val
         
         .nav__toggle#nav-toggle
           i.bx.bx-grid-alt
@@ -33,7 +33,7 @@ html(lang="fr")
 
     main
 
-      // HOME 
+      // HOME
 
       section.home.section#home
         .home__container.container.grid
@@ -1974,8 +1974,7 @@ html(lang="fr")
     // GSAP
     
     script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js")
-    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js") 
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/ScrollToPlugin.min.js")
 
     // MAIN JS 
-    
-    script(src="./assets/js/index.js") 
+    script(src="./assets/js/index.js")
