@@ -18,7 +18,10 @@ body {
   font-family: "Poppins", sans-serif;
   font-size: 0.938rem;
   background-color: white;
-  color: #5d5b56; }
+  color: #5d5b56;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s; }
 
 h1, h2, h3 {
   font-weight: 600;
@@ -346,6 +349,20 @@ img {
 
 /*=============== Theme  ===============*/
 /*=============== Variable Theme Dark  ===============*/
+.dark-theme {
+  background-color: #1F1E1C; }
+  .dark-theme .header {
+    background-color: #24221E; }
+  .dark-theme .active-link::before {
+    background-color: #FFF; }
+  .dark-theme .nav__logo, .dark-theme .nav__toggle, .dark-theme .change-theme, .dark-theme .nav__link, .dark-theme h1, .dark-theme h2, .dark-theme h3, .dark-theme .button-link, .dark-theme .footer__link, .dark-theme .footer__logo, .dark-theme .footer__description, .dark-theme .footer__copy, .dark-theme .footer__social-link, .dark-theme p, .dark-theme .contact__adress, .dark-theme .contact__information {
+    color: #FFF; }
+  .dark-theme .scroll-header {
+    -webkit-box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5); }
+  .dark-theme .services__data, .dark-theme .nav__menu, .dark-theme .footer {
+    background-color: #2C2A26; }
+
 /*=============== Button Dark/Light ===============*/
 .change-theme {
   position: absolute;

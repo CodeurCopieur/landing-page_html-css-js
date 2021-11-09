@@ -71,7 +71,7 @@ body {
   font-size: $normal-font-size;
   background-color: $body-color;
   color: $text-color;
-  // transition: .5s; for animation dark mode
+  transition: .5s; //for animation dark mode
 }
 
 h1, h2, h3 {
@@ -489,14 +489,28 @@ img {
 
 /*=============== Theme  ===============*/
 /*=============== Variable Theme Dark  ===============*/
-body.dark-theme {
-  $first-color-light: hsl($hue, $sat, 75%);
-  $title-color: hsl($hue, 4%, 95%);
-  $text-color: hsl($hue, 4%, 80%);
-  $body-color: hsl($hue, 8%, 13%);
-  $container-color: hsl($hue, 8%, 16%);
-  $scroll-bar-color: hsl($hue, 4%, 32%);
-  $scroll-thumb-color: hsl($hue, 4%, 24%);
+.dark-theme {
+  background-color: #1F1E1C;
+
+  .header {
+    background-color: #24221E;
+  }
+
+  .active-link::before {
+    background-color: #FFF;
+  }
+
+  .nav__logo, .nav__toggle, .change-theme, .nav__link, h1, h2, h3, .button-link, .footer__link, .footer__logo, .footer__description, .footer__copy, .footer__social-link, p, .contact__adress,.contact__information  {
+    color: #FFF;
+  }
+
+  .scroll-header {
+    box-shadow: 0 1px 4px rgba(255, 255, 255, 0.5);
+  }
+
+  .services__data, .nav__menu, .footer  {
+    background-color: #2C2A26;
+  }
 }
 
 
